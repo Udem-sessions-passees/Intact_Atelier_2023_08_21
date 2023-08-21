@@ -11,7 +11,7 @@ Tommy                  tommymastromonaco2@gmail.com
 
 Yue                    yue.4.zhang@hec.ca
 
-Earnest
+Earnest                ernest.taolong@hec.ca
 
 Yasmin                yasmin.kalhor@hec.ca
 
