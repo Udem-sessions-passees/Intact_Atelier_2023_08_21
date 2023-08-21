@@ -24,6 +24,6 @@ Explore and identify other approaches.
 
 Kylian                kylian.yoan@gmail.com
 
-Gavin
+Gavin gjorok@uwaterloo.ca
 
 Brice                 arsene-brice.zotsa-ngoufack@univ-amu.fr
