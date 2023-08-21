@@ -9,7 +9,7 @@ Zehai                  zehai.wen@umontreal.ca
 
 Tommy                  tommymastromonaco2@gmail.com
 
-Yue
+Yue                    yue.4.zhang@hec.ca
 
 Earnest
 
