@@ -13,7 +13,7 @@ Yue
 
 Earnest
 
-Yasmin
+Yasmin                yasmin.kalhor@hec.ca
 
 
 
