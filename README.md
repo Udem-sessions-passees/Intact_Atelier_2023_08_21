@@ -7,7 +7,7 @@ Value in a Retail Banking Context. European Management Journal. 25. 221-234. 10.
 
 Zehai                  zehai.wen@umontreal.ca
 
-Tommy
+Tommy                  tommymastromonaco2@gmail.com
 
 Yue
 
