@@ -13,17 +13,17 @@ Yue                    yue.4.zhang@hec.ca
 
 Earnest                ernest.taolong@hec.ca
 
-Yasmin                yasmin.kalhor@hec.ca
+Yasmin                 yasmin.kalhor@hec.ca
 
 
 
-########################################################################################################
+####################################################################
 Group 2:
 
 Explore and identify other approaches.
 
 Kylian                kylian.yoan@gmail.com
 
-Gavin gjorok@uwaterloo.ca
+Gavin                 gjorok@uwaterloo.ca
 
 Brice                 arsene-brice.zotsa-ngoufack@univ-amu.fr
