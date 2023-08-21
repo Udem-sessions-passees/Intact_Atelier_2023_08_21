@@ -22,7 +22,7 @@ Group 2:
 
 Explore and identify other approaches.
 
-Kylian
+Kylian                kylian.yoan@gmail.com
 
 Gavin
 
