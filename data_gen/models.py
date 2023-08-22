@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 
-
 class Models:
     def __init__(self, model_dict):
         self.cost_dict = model_dict["cost"]

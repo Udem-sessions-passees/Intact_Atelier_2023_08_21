@@ -27,3 +27,17 @@ Kylian                kylian.yoan@gmail.com
 Gavin                 gjorok@uwaterloo.ca
 
 Brice                 arsene-brice.zotsa-ngoufack@univ-amu.fr
+
+########################################################
+
+References:
+
+1. Regression tree to identify groups:
+
+An Introduction to Statistical Learning Chapter 8
+
+2. Construction for data set for identifying transitions.
+
+3. Estimate Transition probabilities (Markov chain wiki and empirical probability wiki).
+
+4. Determining CLV(customer lifetime value) as an expectation.
