@@ -25,11 +25,12 @@ def generate_path(A, s_0, p_client=0.85):
   return path
 
 
-def clv_estimation(A, P, N=10**4):
+def clv_estimation(A, P, s_0, N=10**4):
   '''
   Inputs:
     transition matrix, A
     vector of profit per group, P
+    initial state, s_0 -- Should be an integer from 0 to k-1
     number of iterations, N -- choose a very high number (10^4 by default)
 
   Output:
@@ -39,8 +40,7 @@ def clv_estimation(A, P, N=10**4):
   estimates = []
 
   for i in range(N):
-    initial_state = np.random.choice([i for i in range(A.shape[0])])  # changing initial state at each iteration
-    path = generate_path(A, initial_state)
+    path = generate_path(A, s_0)
 
     profits = [P[j] for j in path]  # mapping the profit to the corresponding group in our path
     gamma = [(1/1.15)**(k+1) for k in range(len(path))]  # "discount" factor
