@@ -126,7 +126,7 @@ where:
 
 \begin{itemize}
 	\item Problem: how to model $S_t$?
-	\item Natural to think of $\{S_t\}$ as a sequence of r.v.
+	\item Natural to think of $\{S_t\}$ as a sequence of random variables.
 	\item We assume the Markov property for simplification:
 \end{itemize}
 \[ \Prob(S_{t+1} = s \mid S_t, S_{t-1}, \dots, S_0) = \Prob(S_{t+1} = s \mid S_t) \]
@@ -168,6 +168,18 @@ We used a method from Haenlein et al. (2007) that involves 3 steps:
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Results}
+  
+  \begin{figure}
+    \includegraphics[scale = 0.3]{result_plot.png}
+  \end{figure}
+    
+  \begin{itemize}
+    \item The method does function on synthetic data. It can categorize clients into controlable number of groups and assign a CLV for each group.
+  \end{itemize}
+  \end{frame}
+
 \section{Discussion}
 
 \begin{frame}
@@ -185,8 +197,8 @@ We used a method from Haenlein et al. (2007) that involves 3 steps:
 
 \begin{itemize}
 	\item Haenlein, Michael \& Kaplan, Andreas \& Beeser, Anemone. (2007). \textit{A Model to Determine Customer Lifetime Value in a Retail Banking Context}. European Management Journal. 25. 221-234. 10.1016/j.emj 2007.01.004. 
- 	\item Jasek, P., Vrana, L., Sperkova, L., Smutny, Z., & Kobulsky, M. (2018, January). Modeling and application of customer lifetime value in online retail. In Informatics (Vol. 5, No. 1, p. 2). MDPI.
-  	\item Jablecka, Marta (2020). Modelling CLV in the Insurance Industry Using Deep Learning Methods (Master's Thesis, KTH ROYAL INSTITUTE OF TECHNOLOGY
+ 	\item Jasek, P., Vrana, L., Sperkova, L., Smutny, Z., \& Kobulsky, M. (2018, January). Modeling and application of customer lifetime value in online retail. In Informatics (Vol. 5, No. 1, p. 2). MDPI.
+  \item Jablecka, Marta (2020). Modelling CLV in the Insurance Industry Using Deep Learning Methods (Master's Thesis, KTH ROYAL INSTITUTE OF TECHNOLOGY
 SCHOOL OF ENGINEERING SCIENCES)
 \end{itemize}
 
