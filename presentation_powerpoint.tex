@@ -151,6 +151,27 @@ where:
 \begin{frame}
 \frametitle{Other approaches}
 
+\textbf{Other classification methods}
+
+\begin{itemize}
+    \item One limitation of a classification tree is that it is very sensitive to small changes of a variable of interest.
+    \item Another option for this supervised classification problem could be to apply a robust logistic regression.
+    \item The main advantage of the tree over this regression method is that it can easily deal with outliers and does not require normalization and scaling of data.
+\end{itemize}
+
+\textbf{Deep Learning}
+
+\begin{itemize}
+    \item A master's thesis was written which attempted to apply deep learning to calculate CLV with a P$\&$C insurance company
+    \item 
+    \item (link to reference)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Other approaches}
+
 \textbf{Extended Pareto/NBD Model}
 
 \begin{itemize}
@@ -158,6 +179,7 @@ where:
   
   \item \textbf{Pareto/NBD Model}:
   \begin{itemize}
+    \item Uses k-means to separate the data set into non-overlapping groups that do not need to be pre-specified.
     \item Uses two main components: Pareto distribution and Negative Binomial Distribution.
     \item Estimates parameters that describe customer behavior, such as transaction rate and the expected number of future transactions.
   \end{itemize}
