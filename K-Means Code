@@ -1,0 +1,62 @@
+import pandas as pd
+import numpy as np
+
+def generate_synthetic_df(n = 100, seed = 0):
+
+    df = pd.DataFrame()
+
+    np.random.seed(seed)
+
+    # Continuous
+    df["ANNUAL_KM_QUANTITY"] = np.clip(np.random.normal(loc=12000, scale=7000, size=n), 0, 100000).astype(int)
+    df["DRIVER_AGE"] = np.clip(np.random.normal(loc=50, scale=17, size=n), 15, 120).astype(int)
+    df["VEHICLE_AGE"] = np.clip(np.random.normal(loc=7, scale=6, size=n), 0, 50).astype(int)
+    df["VEHICLE_PRICE"] = np.clip(np.random.normal(loc=15000, scale=11000, size=n), 100, 500000).astype(int)
+    # Categorical
+    df["DRIVER_TRAINING_INDICATOR"] = np.random.choice([0, 1], size=n, p=[0.87, 0.13])
+    df["LEASED_VEHICLE_INDICATOR"] = np.random.choice([0, 1], size=n, p=[0.94, 0.06])
+    df["MARITAL_STATUS"] = np.random.choice([0, 1], size=n, p=[0.63, 0.37])
+    df["NUMBER_OF_CLAIMS_PAST_5YEARS"] = np.random.choice([0, 1, 2, 3], size=n, p=[0.75, 0.15, 0.08, 0.02])
+    df["MINOR_CONVICTIONS_PAST_3YEARS"] = np.random.choice([0, 1, 2, 3], size=n, p=[0.80, 0.15, 0.04, 0.01])
+    
+    return df
+
+# Write a function that scales a dataframe with the synthetic data so that the maximum observation 
+#   for each category is 1, then applies a weight to each category representing the relative importance
+
+my_weights = np.array([7, 9, 3, 2, 7, 4, 1, 10, 6])
+def scale_df(df, weights = my_weights):
+    df_scaled = df.copy()
+    if weights is None:
+        weights = np.ones(df_scaled.shape[1])
+    for i in range(df_scaled.shape[1]):
+        df_scaled.iloc[:, i] = df_scaled.iloc[:, i] / df_scaled.iloc[:, i].max() * weights[i]
+    return df_scaled
+
+# Write a function that classifies the entries in a dataframe using K-means
+
+from sklearn.cluster import KMeans
+def classify_df(df, n_clusters = 5, seed = 0):
+    df_classified = df.copy()
+    kmeans = KMeans(n_clusters = n_clusters, random_state = seed).fit(df_classified)
+    df_classified["CLUSTER"] = kmeans.labels_
+    return df_classified
+
+# Write code that generates a synthetic dataframe, scales it, classifies it
+#   and plots the results
+
+df = generate_synthetic_df()
+# Print the dataframe
+print(df)
+# Scale the dataframe
+df_scaled = scale_df(df)
+# Print the scaled dataframe
+print(df_scaled)
+# Classify the dataframe
+df_classified = classify_df(df_scaled)
+# Print the classified dataframe
+print(df_classified)
+# Print the number of observations in each cluster
+print(df_classified["CLUSTER"].value_counts())
+# Print out the results in the original dataframe that were in each cluster
+print(df_classified.groupby("CLUSTER").mean()/ my_weights * df.max())
