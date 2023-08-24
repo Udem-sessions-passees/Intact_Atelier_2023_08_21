@@ -173,30 +173,9 @@ We used a method from Haenlein et al. (2007) that involves 3 steps:
 \begin{frame}
 \frametitle{Other approaches}
 
-\textbf{Extended Pareto/NBD Model}
-
 \begin{itemize}
-  \item Combines \textbf{Pareto/NBD} and \textbf{Gamma-Gamma} models.
-  
-  \item \textbf{Pareto/NBD Model}:
-  \begin{itemize}
-    \item Uses two main components: Pareto and Negative Binomial Distribution.
-    \item Estimates parameters that describe customer behavior, such as transaction rate and the expected number of future transactions.
-  \end{itemize}
-  
-  \item \textbf{Gamma-Gamma Model}:
-  \begin{itemize}
-    \item Assumes that customer transaction values follow a gamma distribution.
-    \item Estimates parameters for average and variability in transaction values.
-  \end{itemize}
-  
-  \item Gives \textbf{CLV predictions} by multiplying results from both submodels.
-  
-  \item Challenges Faced:
-  \begin{itemize}
-    \item Attempted implementation, but faced technical hurdles.
-    \item The dataset provided for the workshop was not suited for implementation (missing variables).
-  \end{itemize}
+\item \textbf{Beta-geometric/NBD Model:} in the context of marketing or online retail, this model was used to estimate the CLV using a conjunction of Pareto/NBD model and Gamma-Gamma model, in Jasek, Pavel, et al. (2018).
+\item \textbf{Deep Learning approach:} a master's thesis was written which attempted to apply deep learning to calculate CLV with a P$\&$C insurance company. Marta Jablecka (2020)
 \end{itemize}
 
 \end{frame}
@@ -206,6 +185,9 @@ We used a method from Haenlein et al. (2007) that involves 3 steps:
 
 \begin{itemize}
 	\item Haenlein, Michael \& Kaplan, Andreas \& Beeser, Anemone. (2007). \textit{A Model to Determine Customer Lifetime Value in a Retail Banking Context}. European Management Journal. 25. 221-234. 10.1016/j.emj 2007.01.004. 
+ 	\item Jasek, P., Vrana, L., Sperkova, L., Smutny, Z., & Kobulsky, M. (2018, January). Modeling and application of customer lifetime value in online retail. In Informatics (Vol. 5, No. 1, p. 2). MDPI.
+  	\item Jablecka, Marta (2020). Modelling CLV in the Insurance Industry Using Deep Learning Methods (Master's Thesis, KTH ROYAL INSTITUTE OF TECHNOLOGY
+SCHOOL OF ENGINEERING SCIENCES)
 \end{itemize}
 
 \end{frame}
