@@ -173,6 +173,26 @@ We used a method from Haenlein et al. (2007) that involves 3 steps:
 \begin{frame}
 \frametitle{Other approaches}
 
+\textbf{Other classification methods}
+
+\begin{itemize}
+    \item One limitation of a classification tree is that it is very sensitive to small changes of a variable of interest.
+    \item Another option for this supervised classification problem could be to apply a robust logistic regression: \text{https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1993.tb01934.x}
+    \item The main advantage of the tree over this regression method is that it can easily deal with outliers and does not require normalization and scaling of data.
+\end{itemize}
+
+\textbf{Deep Learning}
+
+\begin{itemize}
+    \item A master's thesis was written which attempted to apply deep learning to calculate CLV with a P$\&$C insurance company
+    \item \text{https://www.diva-portal.org/smash/get/diva2:1431621/FULLTEXT02.pdf}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Other approaches}
+
 \textbf{Extended Pareto/NBD Model}
 
 \begin{itemize}
@@ -180,7 +200,8 @@ We used a method from Haenlein et al. (2007) that involves 3 steps:
   
   \item \textbf{Pareto/NBD Model}:
   \begin{itemize}
-    \item Uses two main components: Pareto and Negative Binomial Distribution.
+    \item Uses k-means to separate the data set into non-overlapping groups that do not need to be pre-specified.
+    \item Uses two main components: Pareto distribution and Negative Binomial Distribution.
     \item Estimates parameters that describe customer behavior, such as transaction rate and the expected number of future transactions.
   \end{itemize}
   
