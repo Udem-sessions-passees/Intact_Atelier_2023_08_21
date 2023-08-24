@@ -101,22 +101,23 @@
 \begin{frame}
 \frametitle{What is CLV?}
 
-\begin{enumerate}
+\begin{itemize}
     \item CLV represents the total expected profit a
     company expects from a client throughout their entire relationship. \pause
     \item Used in multiple industries in order to evaluate the financial value of a
     customer and better tailor the approach of the company towards
     customers (pricing, marketing, etc.) 
-\end{enumerate}
 
-Mathematically, we can define CLV as
+\item Mathematically, we can define CLV as
 \[
 CLV = \E[\sum_{t=1}^T \gamma^t Profit(S_t)]
 \]
 where:
 \begin{itemize}
     \item $\gamma$ is a discounting factor to account for time-value of money.
-    \item Profit(S_t) is a function that gives the expected profit from a client given their state $S_t$.
+    \item $Profit(S_t)$ is a function that gives the expected profit from a client given their state $S_t$.
+\end{itemize}
+
 \end{itemize}
 
 \end{frame}
